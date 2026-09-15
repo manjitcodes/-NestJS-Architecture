@@ -2,11 +2,7 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class NotesService {
-  private notes: Array<{
-    id: number;
-    text: string;
-    completed: boolean;
-  }> = [];
+  private notes: Array<{ id: number; text: string; completed: boolean }> = [];
   private nextId = 1;
 
   findAll() {
